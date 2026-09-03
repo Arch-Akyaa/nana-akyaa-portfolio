@@ -1,4 +1,4 @@
-# Nana Akyaa Personal Website — Version 4
+# Nana Akyaa Personal Website - Version 5
 
 This version is designed as a tab-based personal-brand website rather than a long scrolling page.
 
@@ -16,9 +16,9 @@ This version is designed as a tab-based personal-brand website rather than a lon
 - SEO description and favicon
 
 ## Files
-- `index.html` — all website content
-- `styles.css` — design and responsive layout
-- `script.js` — tab navigation + contact-form handling
+- `index.html` - all website content
+- `styles.css` - design and responsive layout
+- `script.js` - tab navigation + contact-form handling
 - `assets/favicon.svg`
 - `assets/Nana-Akyaa-Asante-Yeboah-CV.pdf`
 
@@ -34,27 +34,13 @@ The website uses only HTML, CSS and JavaScript. There is no framework and no ins
 
 # 2. Make the contact form email Nana
 
-The form is already coded. It only needs a one-time Formspree form ID.
+The contact form is fully configured with the Formspree endpoint provided by Nana.
 
-### One-time setup
-1. Go to https://formspree.io and create an account using the email address that should receive website enquiries.
-2. Create a new form.
-3. Formspree will give you an endpoint similar to:
-   `https://formspree.io/f/abcdwxyz`
-4. Open `index.html`.
-5. Search for:
-   `https://formspree.io/f/YOUR_FORM_ID`
-6. Replace it with the endpoint Formspree gave you.
-7. Save the file and upload/commit the update to GitHub.
+### Contact form
+The form submits to:
+`https://formspree.io/f/xjyvrzak`
 
-The form will then send the visitor's:
-- Name
-- Email
-- Organisation
-- Enquiry type
-- Message
-
-to the email configured in Formspree.
+Messages will be sent through the Formspree form connected to that endpoint.
 
 The site also retains direct email and LinkedIn links as a fallback.
 
@@ -145,7 +131,7 @@ Change these variables once and the colour scheme updates across the site.
 
 ---
 
-# Version 4 additions
+# Version 5 additions
 
 ## Insights / LinkedIn writing
 A new `Insights` tab has been added.
@@ -170,7 +156,7 @@ This avoids mislabelling or inventing article titles.
 
 ## Innovation & Recognition
 The About page now includes:
-- Standard Bank Group Hackathon — Project Lead (2023)
+- Standard Bank Group Hackathon - Project Lead (2023)
 - BecauseSheCan top-performing Mentor–Mentee recognition (May 2026)
 - Cross-disciplinary credentials: TOGAF®, AWS Solutions Architect and FMVA®
 
@@ -182,3 +168,17 @@ The Home page now frames Nana's personal brand under:
 
 ## Credentials
 FMVA® has been added to the prominent homepage credentials panel.
+
+
+---
+
+# Version 5 design changes
+
+- Replaced the dark charcoal theme with an off-white, white and blue visual system.
+- Increased major heading sizes.
+- Increased spacing between content blocks.
+- Reduced visual density across cards and sections.
+- Removed visible em dash characters from website copy.
+- Added homepage navigation links to every main tab at the bottom of the Home page.
+- Connected the contact form to Formspree endpoint `xjyvrzak`.
+- Kept black, grey and blue as the primary brand colours, but on a much lighter background.
