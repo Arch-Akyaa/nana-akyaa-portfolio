@@ -238,3 +238,14 @@ This version uses Nana's offline-edited HTML as the source of truth.
 - Each gallery card links directly to the relevant LinkedIn post.
 - Missing photos show a clean filename prompt instead of a broken image.
 - See `assets/engagements/README.txt` for the exact photo filenames.
+
+
+---
+
+# Version 9: Mobile navigation fix
+
+- Made the mobile hamburger icon visible in deep blue.
+- Restored "Nana Akyaa Asante Yeboah" in the mobile header.
+- Added a white dropdown navigation panel with all site tabs.
+- Improved mobile menu accessibility with `aria-controls`.
+- Added stronger z-index and positioning so the menu displays above page content.
