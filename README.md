@@ -224,3 +224,17 @@ To use the supplied logos, rename them exactly as above and place them inside th
 - Replaced all diagonal arrows with horizontal arrows.
 - Enlarged and repositioned the top-left section labels.
 - Updated the site brand to "Nana Akyaa Asante Yeboah" instead of "Nana Akyaa".
+
+
+---
+
+# Version 8: Speaking & Mentorship
+
+This version uses Nana's offline-edited HTML as the source of truth.
+
+- Removed company logos from Speaking & Mentorship.
+- Kept Because She Can as a dedicated mentorship feature.
+- Added a five-card photo engagement gallery using the supplied LinkedIn links.
+- Each gallery card links directly to the relevant LinkedIn post.
+- Missing photos show a clean filename prompt instead of a broken image.
+- See `assets/engagements/README.txt` for the exact photo filenames.
