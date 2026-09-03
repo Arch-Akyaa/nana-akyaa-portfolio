@@ -2226,3 +2226,255 @@ footer {
     padding-top: 62px;
   }
 }
+
+
+/* =========================================================
+   VERSION 6: HUMAN-LED TYPOGRAPHY AND SPACING
+   ========================================================= */
+
+/* Font discipline */
+body {
+  font-family: "Inter", "Roboto", Arial, sans-serif;
+}
+
+h1, h2, h3,
+.brand-name,
+.button,
+.nav > a {
+  font-family: "Lato", "Inter", sans-serif;
+}
+
+p, span, small, label, input, textarea, select {
+  font-family: "Inter", "Roboto", sans-serif;
+}
+
+/* Hero: deliberately smaller and easier to scan */
+.hero-copy h1 {
+  max-width: 900px;
+  font-size: clamp(3.05rem, 5.7vw, 5.75rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.hero-text {
+  max-width: 800px;
+}
+
+/* Less decorative, more editorial */
+.brand-pillars article,
+.expertise-card,
+.project-card,
+.recognition-card,
+.writing-card,
+.engagement-card,
+.home-explore-link {
+  box-shadow: none;
+}
+
+/* Card headings are stronger, but copy starts sooner */
+.brand-pillars h3 {
+  margin: 16px 0 8px;
+  font-size: 1.5rem;
+  line-height: 1.22;
+}
+
+.expertise-card h2 {
+  margin: 18px 0 10px;
+  font-size: 1.62rem;
+  line-height: 1.18;
+}
+
+.project-card h2 {
+  margin: 20px 0 12px;
+  font-size: 2.08rem;
+  line-height: 1.12;
+}
+
+.recognition-card h3 {
+  margin: 18px 0 10px;
+  padding-top: 0;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.writing-topic {
+  margin: 18px 0 8px;
+  padding-top: 0;
+}
+
+.writing-card h3 {
+  font-size: 1.55rem;
+  line-height: 1.2;
+}
+
+.engagement-body h2 {
+  font-size: 1.95rem;
+  line-height: 1.15;
+}
+
+.topics-panel h2 {
+  font-size: 2.05rem;
+}
+
+/* Card content spacing */
+.expertise-card,
+.project-card,
+.recognition-card,
+.writing-card {
+  min-height: 0;
+}
+
+.expertise-card {
+  padding: 26px;
+}
+
+.project-card {
+  padding: 30px;
+}
+
+.project-detail-grid {
+  margin: 20px 0;
+  padding: 18px 0;
+}
+
+.recognition-card,
+.writing-card {
+  padding: 26px;
+}
+
+.card-index {
+  margin-bottom: 0;
+}
+
+/* Bigger numbering across the site */
+.card-index,
+.writing-number,
+.project-top > span,
+.path-item > span,
+.home-explore-link > span,
+.topic-grid span {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.project-top > span {
+  font-size: 1.1rem;
+}
+
+.impact-stat strong {
+  font-size: 3.25rem;
+}
+
+/* Home bottom navigation */
+.home-explore-heading {
+  display: block;
+  margin-bottom: 28px;
+}
+
+.home-explore-heading h2 {
+  max-width: 760px;
+  margin: 0;
+  text-align: left;
+  font-size: clamp(2.5rem, 4.5vw, 4.6rem);
+}
+
+.home-explore-link strong {
+  font-size: 1.16rem;
+}
+
+.home-explore-link small {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+/* Less crowded labels */
+.section-label,
+.eyebrow,
+.mini-label,
+.detail-label {
+  letter-spacing: 0.095em;
+}
+
+/* Partner logos */
+.logo-visual {
+  min-height: 185px;
+  background: #f7f9fb;
+}
+
+.partner-logo {
+  width: min(230px, 68%);
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo img {
+  display: block;
+  max-width: 100%;
+  max-height: 105px;
+  object-fit: contain;
+}
+
+.logo-fallback {
+  display: none;
+  color: var(--grey-900);
+  font-family: "Lato", "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+/* Remove excessive card "air" */
+.card-index,
+.project-top,
+.recognition-meta,
+.writing-number {
+  margin-bottom: 0;
+}
+
+.brand-pillars article {
+  min-height: 165px;
+}
+
+.brand-pillars h3 {
+  margin-top: 18px;
+}
+
+.engagement-body {
+  padding: 27px;
+}
+
+/* More natural body copy width */
+.about-story {
+  max-width: 760px;
+}
+
+.about-story p,
+.project-summary,
+.expertise-card > p,
+.engagement-body > p:not(.engagement-org),
+.writing-card > p:not(.writing-topic),
+.recognition-card > p {
+  line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 860px) {
+  .hero-copy h1 {
+    font-size: clamp(2.8rem, 9.5vw, 4.6rem);
+  }
+}
+
+@media (max-width: 590px) {
+  .hero-copy h1 {
+    font-size: 2.75rem;
+    line-height: 1.02;
+  }
+
+  .project-card h2,
+  .engagement-body h2 {
+    font-size: 1.65rem;
+  }
+}

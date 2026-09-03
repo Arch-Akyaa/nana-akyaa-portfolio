@@ -1,4 +1,4 @@
-# Nana Akyaa Personal Website - Version 5
+# Nana Akyaa Personal Website - Version 6
 
 This version is designed as a tab-based personal-brand website rather than a long scrolling page.
 
@@ -131,7 +131,7 @@ Change these variables once and the colour scheme updates across the site.
 
 ---
 
-# Version 5 additions
+# Version 6 additions
 
 ## Insights / LinkedIn writing
 A new `Insights` tab has been added.
@@ -172,7 +172,7 @@ FMVA® has been added to the prominent homepage credentials panel.
 
 ---
 
-# Version 5 design changes
+# Version 6 design changes
 
 - Replaced the dark charcoal theme with an off-white, white and blue visual system.
 - Increased major heading sizes.
@@ -182,3 +182,30 @@ FMVA® has been added to the prominent homepage credentials panel.
 - Added homepage navigation links to every main tab at the bottom of the Home page.
 - Connected the contact form to Formspree endpoint `xjyvrzak`.
 - Kept black, grey and blue as the primary brand colours, but on a much lighter background.
+
+
+---
+
+# Version 6 refinements
+
+- Reduced the homepage hero heading size.
+- Capitalised "How" in the homepage question.
+- Changed "Work with / Invite me".
+- Replaced the 23+ banks homepage metric with a 20% efficiency improvement metric from Nana's CV.
+- Removed "EXPLORE MORE" and the supporting explanatory sentence from the homepage navigation section.
+- Tightened spacing between card headings and body copy.
+- Increased card heading sizes.
+- Increased numbering sizes throughout the website.
+- Standardised typography to Inter, Roboto and Lato only.
+- Added logo-ready spaces to the Because She Can and MTN engagement cards.
+
+## Engagement logos
+
+The speaking cards look for these files:
+
+- `assets/because-she-can-logo.png`
+- `assets/mtn-logo.png`
+
+If the files are missing, the cards fall back to text rather than showing a broken image.
+
+To use the supplied logos, rename them exactly as above and place them inside the `assets` folder.
