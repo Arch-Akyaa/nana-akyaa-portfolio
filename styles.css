@@ -12,8 +12,8 @@
   --blue-700: #164a8a;
   --blue-600: #1f62ad;
   --blue-500: #2f77c9;
-  --blue-400: #4f8ed4;
-  --blue-300: #7eaae0;
+  --blue-400: #1f4f8a;
+  --blue-300: #234f7d;
 
   --grey-950: #121820;
   --grey-900: #1a222c;
@@ -36,7 +36,7 @@
   --text: #17202a;
   --muted: #5f6b77;
   --brand: #2f77c9;
-  --brand-soft: #7eaae0;
+  --brand-soft: #234f7d;
 
   --max: 1220px;
   --header-h: 78px;
@@ -2241,7 +2241,7 @@ h1, h2, h3,
 .brand-name,
 .button,
 .nav > a {
-  font-family: "Lato", "Inter", sans-serif;
+  font-family: "Inter", "Roboto", sans-serif;
 }
 
 p, span, small, label, input, textarea, select {
@@ -2420,7 +2420,7 @@ p, span, small, label, input, textarea, select {
 .logo-fallback {
   display: none;
   color: var(--grey-900);
-  font-family: "Lato", "Inter", sans-serif;
+  font-family: "Inter", "Roboto", sans-serif;
   font-size: 1.4rem;
   font-weight: 900;
   text-align: center;
@@ -2476,5 +2476,219 @@ p, span, small, label, input, textarea, select {
   .project-card h2,
   .engagement-body h2 {
     font-size: 1.65rem;
+  }
+}
+
+
+/* =========================================================
+   VERSION 7 REFINEMENTS
+   ========================================================= */
+
+/* Typography: Inter and Roboto only */
+body,
+h1, h2, h3,
+.brand-name,
+.button,
+.nav > a,
+p, span, small, label, input, textarea, select {
+  font-family: "Inter", "Roboto", Arial, sans-serif;
+}
+
+/* Deep blue text only */
+.section-label,
+.eyebrow,
+.mini-label,
+.detail-label,
+.credential-kicker,
+.linkedin-link,
+.text-button,
+.engagement-org,
+.engagement-meta span:first-child,
+.recognition-meta span:first-child,
+.project-top p,
+.writing-topic,
+.home-explore-link > span,
+.home-explore-link b,
+.card-index,
+.project-top > span,
+.writing-number,
+.topic-grid span,
+.style-number {
+  color: #164a8a !important;
+}
+
+.hero-copy h1 span,
+.impact-stat strong {
+  color: #164a8a !important;
+}
+
+/* About profile consistency */
+.about-story {
+  font-size: 1.05rem;
+  line-height: 1.84;
+}
+
+.about-story p,
+.about-story .story-lead {
+  font-size: 1.05rem;
+  line-height: 1.84;
+  font-weight: 400;
+  color: var(--grey-300);
+}
+
+.about-story strong {
+  font-weight: 400;
+  color: inherit;
+}
+
+/* Section labels: larger and better placed */
+.page-heading .section-label {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-left: 4px solid #164a8a;
+  background: #eef3f8;
+  color: #164a8a;
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  line-height: 1.2;
+}
+
+.page-heading {
+  grid-template-columns: 0.42fr 1.58fr;
+  gap: 56px;
+}
+
+/* Structured "What I Bring to a Room" */
+.working-style {
+  margin-top: 62px;
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.working-style-head {
+  display: grid;
+  grid-template-columns: 0.55fr 1.45fr;
+  gap: 34px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+
+.working-style-head .section-label {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.working-style-head h2 {
+  margin: 0;
+  color: var(--grey-950);
+  font-size: 2.1rem;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.structured-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.structured-grid article {
+  min-height: 180px;
+  padding: 24px 22px;
+  border-right: 1px solid var(--line);
+}
+
+.structured-grid article:first-child {
+  padding-left: 0;
+}
+
+.structured-grid article:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.style-number {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.structured-grid strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--grey-950);
+  font-size: 1rem;
+}
+
+.structured-grid p {
+  margin: 0;
+  color: var(--grey-600);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+/* Full name prominence */
+.brand-name {
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--grey-950);
+}
+
+/* No diagonal visual cue styling */
+a {
+  text-decoration-thickness: 1px;
+}
+
+@media (max-width: 1050px) {
+  .structured-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .structured-grid article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .structured-grid article:nth-child(-n+2) {
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 860px) {
+  .page-heading {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .working-style-head {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .brand-name {
+    display: none;
+  }
+}
+
+@media (max-width: 590px) {
+  .structured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .structured-grid article,
+  .structured-grid article:first-child,
+  .structured-grid article:last-child {
+    padding: 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .structured-grid article:last-child {
+    border-bottom: 0;
   }
 }

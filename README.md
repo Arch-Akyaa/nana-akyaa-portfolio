@@ -1,4 +1,4 @@
-# Nana Akyaa Personal Website - Version 6
+# Nana Akyaa Asante Yeboah Personal Website - Version 6
 
 This version is designed as a tab-based personal-brand website rather than a long scrolling page.
 
@@ -209,3 +209,18 @@ The speaking cards look for these files:
 If the files are missing, the cards fall back to text rather than showing a broken image.
 
 To use the supplied logos, rename them exactly as above and place them inside the `assets` folder.
+
+
+---
+
+# Version 7 refinements
+
+- Standardised fonts to Inter and Roboto only.
+- Removed light blue text and moved all blue text to deeper navy/royal blue hues.
+- Normalised About-page body text so the opening sentence is the same size as the rest.
+- Removed bold emphasis from the About profile narrative.
+- Reworked "What I Bring to a Room" into a numbered four-part structure.
+- Removed "Using transferable skills to pivot careers" from speaking topics.
+- Replaced all diagonal arrows with horizontal arrows.
+- Enlarged and repositioned the top-left section labels.
+- Updated the site brand to "Nana Akyaa Asante Yeboah" instead of "Nana Akyaa".
