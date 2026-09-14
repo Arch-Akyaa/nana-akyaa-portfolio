@@ -36,3 +36,14 @@ Version 18:
 - Removed the blue NA monogram from the certifications/profile card.
 - Reduced homepage visual density and increased whitespace.
 - Slightly reduced card and portrait size to make the hero feel calmer.
+
+Version 19:
+- Shifted the profile/certifications card slightly to the left on desktop and tablet.
+- Kept the portrait at the far right.
+- Left mobile layout unchanged.
+
+Version 20:
+- Shifted the profile/certifications card substantially further left.
+- Desktop shift: 64px left.
+- Tablet shift: 42px left.
+- Portrait position remains unchanged at the far right.

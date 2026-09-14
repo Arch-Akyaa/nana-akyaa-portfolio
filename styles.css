@@ -3684,3 +3684,49 @@ a {
     margin-top: -34px;
   }
 }
+
+
+/* =========================================================
+   VERSION 19: SHIFT PROFILE/CERTIFICATION CARD LEFT
+   ========================================================= */
+
+@media (min-width: 1181px) {
+  .home-side .credential-panel {
+    transform: translateX(-20px);
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  .home-side .credential-panel {
+    transform: translateX(-14px);
+  }
+}
+
+@media (max-width: 860px) {
+  .home-side .credential-panel {
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   VERSION 20: SHIFT CERTIFICATION CARD FURTHER LEFT
+   ========================================================= */
+
+@media (min-width: 1181px) {
+  .home-side .credential-panel {
+    transform: translateX(-64px);
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  .home-side .credential-panel {
+    transform: translateX(-42px);
+  }
+}
+
+@media (max-width: 860px) {
+  .home-side .credential-panel {
+    transform: none;
+  }
+}
