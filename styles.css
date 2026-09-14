@@ -3026,3 +3026,381 @@ a {
     font-size: 0.72rem;
   }
 }
+
+
+/* =========================================================
+   VERSION 11: HERO PEEK PORTRAIT
+   ========================================================= */
+
+.home-side {
+  position: relative;
+  width: 100%;
+  padding-right: 175px;
+  justify-self: end;
+  overflow: visible;
+}
+
+.peek-portrait {
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+  z-index: 3;
+  width: min(235px, 44%);
+  margin: 0;
+  pointer-events: none;
+  filter: drop-shadow(0 18px 34px rgba(18, 24, 32, 0.12));
+}
+
+.peek-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.home-side .credential-panel {
+  min-height: 100%;
+}
+
+@media (max-width: 1180px) {
+  .home-side {
+    padding-right: 145px;
+  }
+
+  .peek-portrait {
+    width: min(205px, 42%);
+  }
+}
+
+@media (max-width: 1050px) {
+  .home-layout {
+    grid-template-columns: 1.12fr 0.88fr;
+  }
+
+  .home-side {
+    padding-right: 130px;
+  }
+
+  .peek-portrait {
+    width: min(180px, 39%);
+  }
+}
+
+@media (max-width: 860px) {
+  .home-side {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-right: 120px;
+  }
+
+  .peek-portrait {
+    right: -8px;
+    bottom: -4px;
+    width: min(165px, 32vw);
+  }
+}
+
+@media (max-width: 590px) {
+  .home-side {
+    padding-right: 76px;
+  }
+
+  .peek-portrait {
+    right: -12px;
+    bottom: 0;
+    width: min(118px, 29vw);
+  }
+}
+
+
+/* =========================================================
+   VERSION 12: SMALLER, HIGHER PEEK PORTRAIT
+   ========================================================= */
+
+.home-layout {
+  grid-template-columns: minmax(0, 1.42fr) minmax(360px, 0.58fr);
+  gap: 44px;
+  align-items: start;
+}
+
+.hero-copy {
+  padding-top: 10px;
+}
+
+.home-side {
+  padding-right: 108px;
+  align-self: start;
+}
+
+.peek-portrait {
+  top: 18px;
+  right: -6px;
+  bottom: auto;
+  width: min(155px, 31%);
+}
+
+.peek-portrait img {
+  width: 100%;
+  height: auto;
+}
+
+.home-side .credential-panel {
+  margin-top: 0;
+}
+
+@media (max-width: 1180px) {
+  .home-layout {
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 34px;
+  }
+
+  .home-side {
+    padding-right: 92px;
+  }
+
+  .peek-portrait {
+    top: 20px;
+    width: min(140px, 30%);
+  }
+}
+
+@media (max-width: 1050px) {
+  .home-layout {
+    grid-template-columns: 1.12fr 0.88fr;
+    gap: 28px;
+  }
+
+  .home-side {
+    padding-right: 84px;
+  }
+
+  .peek-portrait {
+    top: 18px;
+    right: -4px;
+    width: min(128px, 27%);
+  }
+}
+
+@media (max-width: 860px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .home-side {
+    max-width: 620px;
+    margin: 0;
+    padding-right: 92px;
+    justify-self: start;
+  }
+
+  .peek-portrait {
+    top: 24px;
+    right: -2px;
+    width: min(132px, 26vw);
+  }
+}
+
+@media (max-width: 590px) {
+  .home-side {
+    padding-right: 68px;
+  }
+
+  .peek-portrait {
+    top: 20px;
+    right: -6px;
+    width: min(102px, 25vw);
+  }
+}
+
+
+/* =========================================================
+   VERSION 13: SHIFT HERO/CARD LEFT, KEEP PORTRAIT FAR RIGHT
+   ========================================================= */
+
+@media (min-width: 861px) {
+  .home-layout {
+    transform: translateX(-44px);
+  }
+
+  .home-side {
+    padding-right: 138px;
+  }
+
+  .peek-portrait {
+    top: 16px;
+    right: -44px;
+    width: min(158px, 30%);
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  .home-layout {
+    transform: translateX(-28px);
+  }
+
+  .home-side {
+    padding-right: 118px;
+  }
+
+  .peek-portrait {
+    right: -26px;
+    width: min(144px, 29%);
+  }
+}
+
+@media (max-width: 860px) {
+  .home-layout {
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   VERSION 14: SHOW MORE OF THE PEEK PORTRAIT
+   ========================================================= */
+
+@media (min-width: 1181px) {
+  .home-side {
+    padding-right: 175px;
+  }
+
+  .peek-portrait {
+    top: 8px;
+    right: -8px;
+    width: min(225px, 40%);
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  .home-side {
+    padding-right: 145px;
+  }
+
+  .peek-portrait {
+    top: 12px;
+    right: -6px;
+    width: min(190px, 36%);
+  }
+}
+
+@media (max-width: 860px) {
+  .home-side {
+    padding-right: 115px;
+  }
+
+  .peek-portrait {
+    top: 18px;
+    right: -4px;
+    width: min(155px, 30vw);
+  }
+}
+
+@media (max-width: 590px) {
+  .home-side {
+    padding-right: 82px;
+  }
+
+  .peek-portrait {
+    top: 18px;
+    right: -3px;
+    width: min(118px, 29vw);
+  }
+}
+
+
+/* =========================================================
+   VERSION 15: LOWER THE PEEK PORTRAIT
+   ========================================================= */
+
+@media (min-width: 1181px) {
+  .peek-portrait {
+    top: auto;
+    bottom: 2px;
+    right: -8px;
+    width: min(225px, 40%);
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  .peek-portrait {
+    top: auto;
+    bottom: 2px;
+    right: -6px;
+    width: min(190px, 36%);
+  }
+}
+
+@media (max-width: 860px) {
+  .peek-portrait {
+    top: auto;
+    bottom: 0;
+    right: -4px;
+    width: min(155px, 30vw);
+  }
+}
+
+@media (max-width: 590px) {
+  .peek-portrait {
+    top: auto;
+    bottom: 0;
+    right: -3px;
+    width: min(118px, 29vw);
+  }
+}
+
+
+/* =========================================================
+   VERSION 16: CLEAR BOTTOM ALIGNMENT WITH PROFILE CARD
+   ========================================================= */
+
+@media (min-width: 1181px) {
+  .home-side {
+    padding-right: 165px;
+  }
+
+  .peek-portrait {
+    top: auto;
+    bottom: 0;
+    right: -3px;
+    width: 205px;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  .home-side {
+    padding-right: 138px;
+  }
+
+  .peek-portrait {
+    top: auto;
+    bottom: 0;
+    right: -3px;
+    width: 172px;
+  }
+}
+
+@media (max-width: 860px) {
+  .home-side {
+    padding-right: 105px;
+  }
+
+  .peek-portrait {
+    top: auto;
+    bottom: 0;
+    right: -2px;
+    width: 135px;
+  }
+}
+
+@media (max-width: 590px) {
+  .home-side {
+    padding-right: 74px;
+  }
+
+  .peek-portrait {
+    top: auto;
+    bottom: 0;
+    right: -2px;
+    width: 96px;
+  }
+}
