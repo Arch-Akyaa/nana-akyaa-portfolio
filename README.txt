@@ -24,3 +24,9 @@ Version 16:
 - Its bottom edge is anchored to the bottom of the profile/certifications card.
 - Portrait is slightly smaller so its top starts lower without creating an awkward bottom cutoff.
 - Most of the portrait remains inside the right edge.
+
+Version 17:
+- Portrait no longer overlaps or blocks the certifications card.
+- Desktop home hero uses a separate portrait column at the far right.
+- Portrait bottom-aligns with the card.
+- Hero text and card remain shifted left enough to create room for the portrait.

@@ -3404,3 +3404,134 @@ a {
     width: 96px;
   }
 }
+
+
+/* =========================================================
+   VERSION 17: PORTRAIT BESIDE CARD, NO OVERLAP
+   ========================================================= */
+
+/* Give the home hero a little more horizontal room than the rest of the site. */
+@media (min-width: 1181px) {
+  #home > .home-layout {
+    width: min(1420px, calc(100% - 32px));
+    grid-template-columns: minmax(0, 1fr) 570px;
+    gap: 30px;
+    align-items: start;
+    transform: none;
+  }
+
+  .home-side {
+    width: 570px;
+    display: grid;
+    grid-template-columns: 365px 190px;
+    gap: 15px;
+    align-items: end;
+    padding-right: 0;
+    overflow: visible;
+  }
+
+  .home-side .credential-panel {
+    width: 365px;
+    margin: 0;
+  }
+
+  .peek-portrait {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 190px;
+    margin: 0;
+    align-self: end;
+    justify-self: end;
+    z-index: 1;
+    filter: drop-shadow(0 18px 34px rgba(18, 24, 32, 0.10));
+  }
+
+  .peek-portrait img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  #home > .home-layout {
+    width: min(1148px, calc(100% - 32px));
+    grid-template-columns: minmax(0, 1fr) 472px;
+    gap: 24px;
+    align-items: start;
+    transform: none;
+  }
+
+  .home-side {
+    width: 472px;
+    display: grid;
+    grid-template-columns: 318px 140px;
+    gap: 14px;
+    align-items: end;
+    padding-right: 0;
+    overflow: visible;
+  }
+
+  .home-side .credential-panel {
+    width: 318px;
+    margin: 0;
+  }
+
+  .peek-portrait {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 140px;
+    margin: 0;
+    align-self: end;
+    justify-self: end;
+  }
+}
+
+/* Mobile returns to a stacked layout. */
+@media (max-width: 860px) {
+  #home > .home-layout {
+    width: min(var(--max), calc(100% - 32px));
+    grid-template-columns: 1fr;
+    transform: none;
+  }
+
+  .home-side {
+    width: 100%;
+    max-width: 620px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 120px;
+    gap: 12px;
+    align-items: end;
+    padding-right: 0;
+    margin: 0;
+  }
+
+  .home-side .credential-panel {
+    width: 100%;
+  }
+
+  .peek-portrait {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    width: 120px;
+    margin: 0;
+    align-self: end;
+  }
+}
+
+@media (max-width: 590px) {
+  .home-side {
+    grid-template-columns: minmax(0, 1fr) 88px;
+    gap: 8px;
+  }
+
+  .peek-portrait {
+    width: 88px;
+  }
+}
