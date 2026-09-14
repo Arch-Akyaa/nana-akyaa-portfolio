@@ -30,3 +30,9 @@ Version 17:
 - Desktop home hero uses a separate portrait column at the far right.
 - Portrait bottom-aligns with the card.
 - Hero text and card remain shifted left enough to create room for the portrait.
+
+Version 18:
+- Removed 'while helping people build careers that work for them.' from the homepage headline.
+- Removed the blue NA monogram from the certifications/profile card.
+- Reduced homepage visual density and increased whitespace.
+- Slightly reduced card and portrait size to make the hero feel calmer.

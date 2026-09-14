@@ -3535,3 +3535,152 @@ a {
     width: 88px;
   }
 }
+
+
+/* =========================================================
+   VERSION 18: CLEANER, LESS CROWDED HOMEPAGE
+   ========================================================= */
+
+#home {
+  padding-top: 64px;
+}
+
+#home > .home-layout {
+  align-items: start;
+}
+
+.hero-copy {
+  padding-top: 8px;
+}
+
+.hero-copy h1 {
+  max-width: 760px;
+  font-size: clamp(3.35rem, 5.1vw, 5.5rem);
+  line-height: 0.97;
+  letter-spacing: -0.055em;
+}
+
+.hero-text {
+  max-width: 720px;
+  margin-top: 26px;
+}
+
+.hero-actions {
+  margin-top: 30px;
+}
+
+/* Profile card header without monogram */
+.credential-head {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.credential-profile-copy {
+  display: block;
+}
+
+.credential-head h2 {
+  margin-top: 0;
+}
+
+.credential-head .mini-label {
+  margin-bottom: 6px;
+}
+
+/* Slightly calmer card density */
+.credential-panel {
+  padding: 25px;
+}
+
+.credential-grid {
+  gap: 9px;
+  margin-top: 16px;
+}
+
+.credential {
+  min-height: 118px;
+  padding: 14px;
+}
+
+.credential-wide {
+  min-height: 94px;
+}
+
+.linkedin-link {
+  margin-top: 16px;
+  padding-top: 14px;
+}
+
+/* More breathing room between the card and portrait */
+@media (min-width: 1181px) {
+  #home > .home-layout {
+    width: min(1420px, calc(100% - 48px));
+    grid-template-columns: minmax(0, 1fr) 545px;
+    gap: 46px;
+  }
+
+  .home-side {
+    width: 545px;
+    grid-template-columns: 355px 170px;
+    gap: 20px;
+  }
+
+  .home-side .credential-panel {
+    width: 355px;
+  }
+
+  .peek-portrait {
+    width: 170px;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 1180px) {
+  #home > .home-layout {
+    grid-template-columns: minmax(0, 1fr) 450px;
+    gap: 34px;
+  }
+
+  .home-side {
+    width: 450px;
+    grid-template-columns: 305px 132px;
+    gap: 13px;
+  }
+
+  .home-side .credential-panel {
+    width: 305px;
+  }
+
+  .peek-portrait {
+    width: 132px;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-copy h1 {
+    max-width: 100%;
+  }
+
+  .home-side {
+    grid-template-columns: minmax(0, 1fr) 110px;
+  }
+
+  .peek-portrait {
+    width: 110px;
+  }
+}
+
+@media (max-width: 590px) {
+  .hero-copy h1 {
+    font-size: 2.6rem;
+  }
+
+  .home-side {
+    grid-template-columns: 1fr;
+  }
+
+  .peek-portrait {
+    width: 105px;
+    justify-self: end;
+    margin-top: -34px;
+  }
+}
