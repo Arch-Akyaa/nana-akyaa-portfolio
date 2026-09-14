@@ -3803,19 +3803,3 @@ a {
     transform: none;
   }
 }
-
-
-/* =========================================================
-   SCROLL STABILITY FIX
-   Prevents refresh/hash navigation from pulling content upward
-   ========================================================= */
-
-html,
-body {
-  overflow-anchor: none;
-}
-
-.page-section {
-  scroll-margin-top: var(--header-h);
-  overflow-anchor: none;
-}
