@@ -3785,3 +3785,21 @@ a {
 .about-heading .section-label {
   transform: translateY(-48px);
 }
+
+
+/* =========================================================
+   FADE-ONLY PAGE TRANSITION
+   Removes vertical movement on refresh / page switching
+   ========================================================= */
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: none;
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
