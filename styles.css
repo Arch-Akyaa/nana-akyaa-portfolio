@@ -3768,3 +3768,20 @@ a {
     height: 132px;
   }
 }
+
+
+/* =========================================================
+   ABOUT LABEL ALIGNMENT - KEEP HEADSHOT POSITION
+   ========================================================= */
+
+.about-heading {
+  align-items: center;
+}
+
+.about-heading-side {
+  align-self: center;
+}
+
+.about-heading .section-label {
+  transform: translateY(-48px);
+}
