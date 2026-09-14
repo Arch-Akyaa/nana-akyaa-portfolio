@@ -3803,3 +3803,22 @@ a {
     transform: none;
   }
 }
+
+
+/* =========================================================
+   MOBILE HOMEPAGE PORTRAIT POSITION
+   Moves the homepage portrait lower on mobile only
+   ========================================================= */
+
+@media (max-width: 860px) {
+  .peek-portrait {
+    transform: translateY(25px);
+  }
+}
+
+@media (max-width: 590px) {
+  .peek-portrait {
+    margin-top: 0;
+    transform: translateY(20px);
+  }
+}
